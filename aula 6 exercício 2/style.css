@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #1b42c4;
+    color: white;
+    padding: 20px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-gallery img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.grid-gallery img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}

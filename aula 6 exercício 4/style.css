@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+}
+
+.styled-paragraph {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.styled-paragraph::first-letter {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4c63af;
+}
+
+.styled-paragraph::first-line {
+    color: #34b8cf;
+    font-style: italic;
+}
