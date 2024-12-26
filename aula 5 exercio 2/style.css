@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    background-color: #e7f7e9;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    height: 200px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+}
+
+.inner-block {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #ffe7d1;
+    padding: 20px;
+    width: 200px;
+    border: 2px solid #f44336;
+    border-radius: 10px;
+}
