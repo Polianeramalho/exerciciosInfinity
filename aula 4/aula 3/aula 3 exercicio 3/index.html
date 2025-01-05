@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-container {
+            width: 300px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 48%;
+            margin-right: 2%;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:last-child {
+            margin-right: 0;
+            background-color: #f44336;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="#" method="POST">
+            
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+
+            
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" required>
+                <option value="brasil">Brasil</option>
+                <option value="estados-unidos">Estados Unidos</option>
+                <option value="canada">Canadá</option>
+                <option value="japao">Japão</option>
+            </select>
+
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            
+            <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+

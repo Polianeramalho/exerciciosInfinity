@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.377);
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #2b3fb1;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.8s ease;
+}
+
+button:last-child {
+    background-color: #65697c;
+}
+
+button:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.form-group input::before {
+    content: attr(id) ' ';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.form-group input#username::before {
+    background-image: url('icon-user.png');
+}
+
+.form-group input#password::before {
+    background-image: url('icon-lock.png');
+}
+
+
+@media (max-width: 600px) {
+    .form-container {
+        width: 100%;
+        margin: 10px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .form-container {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    button {
+        width: 48%;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .form-container {
+        width: 400px;
+    }
+
+    button {
+        width: 48%;
+    }
+}
